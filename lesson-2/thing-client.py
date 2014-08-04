@@ -5,8 +5,8 @@ import network
 
 SERVER_IP = sys.argv[1]
 
-LED = 11
-GPIO.setmode(GPIO.BCM)
+LED = 23
+GPIO.setmode(GPIO.BOARD)
 GPIO.setup(LED, GPIO.OUT)
 gotResponse = False
 
