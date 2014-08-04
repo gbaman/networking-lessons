@@ -45,8 +45,8 @@ If not, check your edits and the network cable. Once the Raspberry Pis are succe
     import time
     import network
 
-    SWITCH = 10
-    GPIO.setmode(GPIO.BCM)
+    SWITCH = 19
+    GPIO.setmode(GPIO.BOARD)
     GPIO.setup(SWITCH, GPIO.IN)
 
     def heard(phrase):
